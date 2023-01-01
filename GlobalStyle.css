@@ -1,0 +1,369 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  background-color: #0b0c10;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style: none;
+}
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  padding: 0px, 20px;
+  z-index: 2;
+  background-color: #0b0c10;
+  border-bottom: solid 1px #0b0c10;
+}
+header .Logo {
+  display: flex;
+  padding-left: 10px;
+}
+header .Logo a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #66fcf1;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+header nav ul {
+  justify-content: center;
+  display: flex;
+  padding-right: 10px;
+}
+header nav ul li a {
+  display: block;
+  color: #66fcf1;
+  padding: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+header nav ul li a:hover {
+  background-color: #45a29e;
+  color: #0b0c10;
+}
+header nav ul li a.active {
+  background-color: #45a29e;
+  color: #0b0c10;
+}
+/* body items */
+.content {
+  width: 100%;
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* title for section in the file  */
+/* .content .section-titles {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #45a29e;
+  border-radius: 20px;
+  border: solid 2px #1f2833;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  color: #66fcf1;
+} */
+/* welcome logo */
+.content .WelcomeBoard {
+  position: relative;
+  min-height: 100vh;
+  margin-top: 5px;
+  background-image: url(Images/Cover2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .WelcomeBoard .inlogo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  color: #66fcf1;
+}
+/* Sign In/Sign Up board  */
+.content .RegisterBoard {
+  position: relative;
+  min-height: 50vh;
+  margin-top: 5px;
+  background-image: url(Images/Cover2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .RegisterBoard .inlogo {
+  top: 25%;
+  left: 25%;
+  transform: translate(-70%, -25%);
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  color: #66fcf1;
+}
+/* Phone board */
+.content .PhoneBoard {
+  position: relative;
+  min-height: 50vh;
+  margin-top: 5px;
+  background-image: url(Images/Cover2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .PhoneBoard .inlogo {
+  top: 25%;
+  left: 25%;
+  transform: translate(-70%, -25%);
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  color: #66fcf1;
+}
+/* Laptop board */
+.content .LaptopBoard {
+  position: relative;
+  min-height: 50vh;
+  margin-top: 5px;
+  background-image: url(Images/Cover2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .LaptopBoard .inlogo {
+  top: 25%;
+  left: 25%;
+  transform: translate(-70%, -25%);
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  color: #66fcf1;
+}
+/* Accesories board  */
+.content .AccBoard {
+  position: relative;
+  min-height: 50vh;
+  margin-top: 5px;
+  background-image: url(Images/Cover2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .AccBoard .inlogo {
+  top: 25%;
+  left: 25%;
+  transform: translate(-70%, -25%);
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  color: #66fcf1;
+}
+/* Cart board */
+.content .CartBoard {
+  position: relative;
+  min-height: 50vh;
+  margin-top: 5px;
+  background-image: url(Images/Cover2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .CartBoard .inlogo {
+  top: 25%;
+  left: 25%;
+  transform: translate(-70%, -25%);
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  color: #66fcf1;
+}
+
+/* body items */
+.content .ContentBoard .items {
+  display: flex;
+  width: 100%;
+  padding: 30px 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2833;
+}
+.content .ContentBoard .items .heads {
+  width: 20%;
+  padding: 20px 20px;
+  font-size: 25px;
+  color: #66fcf1;
+}
+/* card contanier */
+.content .ContentBoard .items .cardcontanier {
+  display: flex;
+  width: 100%;
+  background-color: #45a29e;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+.content .ContentBoard .items .card {
+  position: relative;
+  border-radius: 10px;
+  padding: 5px 5px;
+  justify-content: center;
+  align-items: center;
+}
+.content .ContentBoard .items .card .cardbutton button {
+  background-color: #45a29e;
+  width: 100%;
+  border: 0px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #66fcf1;
+  transition: 0.3s;
+}
+.content .ContentBoard .items .card .cardbutton button:hover {
+  color: #0b0c10;
+}
+.content .ContentBoard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  background-color: #1f2833;
+  color: #66fcf1;
+  margin: 5px 5px;
+}
+.content .ContentBoard .items .cardcontanier .card p {
+  padding: 5px 5px;
+  font-size: 20px;
+  text-align: center;
+}
+.content .ContentBoard .items .cardcontanier .card a {
+  align-items: center;
+}
+/* signin/signup/stafflogin */
+.content .RegBoard {
+  position: relative;
+  background-color: #1f2833;
+  color: #66fcf1;
+  margin: 5px 250px;
+}
+.content .RegBoard .formcontainer {
+  width: 100%;
+  padding: 20px 100px;
+  font-size: 20px;
+}
+
+.content .RegBoard .SectionTitles {
+  font-size: 50px;
+  text-align: center;
+  color: #66fcf1;
+}
+.content .RegBoard .formcontainer .Fields {
+  padding: 2px 2px;
+  margin-right: 5px;
+}
+.content .RegBoard .formcontainer .submitb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .RegBoard .formcontainer .textfield {
+  background-color: #66fcf1;
+  width: 100%;
+  margin: 5px 10px;
+  padding: 5px 5px;
+  font-size: 16px;
+  color: #1f2833;
+  border: #0b0c10 solid 1px;
+  border-radius: 10px;
+}
+.content .RegBoard .formcontainer .SubmitButton {
+  width: 100px;
+  padding: 5px 5px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #45a29e;
+  border-radius: 10px;
+  color: #66fcf1;
+  transition: 0.3s;
+}
+.content .RegBoard .formcontainer .SubmitButton:hover {
+  color: #1f2833;
+}
+.content .RegBoard .formcontainer .errormsg {
+  width: 100%;
+  padding: 2px 2px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #1f2833;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: none;
+}
+/* cart */
+.content .items .cardcontanier .Empty {
+  padding: 20px 20px;
+  color: #66fcf1;
+  font-size: 30px;
+  text-align: center;
+}
+/* Footer  */
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px, 20px;
+  background-color: #45a29e;
+}
+footer .Logo {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+footer .footcontainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+footer .footcontainer .about ul li a {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  text-decoration: none;
+  color: #66fcf1;
+  transition: 0.3s;
+}
+footer p {
+  font-size: 18px;
+  color: #1f2833;
+}
+footer .footcontainer .contact ul li a {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  text-decoration: none;
+  color: #66fcf1;
+  transition: 0.3s;
+}
+footer .footcontainer .contact ul li a:hover {
+  color: #0b0c10;
+}
+footer .footcontainer .about ul li a:hover {
+  color: #0b0c10;
+}

@@ -1,0 +1,60 @@
+     <ul>
+            <li>Headphones</li>
+            <li>Cables</li>
+            <li>Storage Devices</li>
+            <li>Speakers</li>
+            <li>Smart Watch</li>
+            <li>Power Banks</li>
+          </ul>
+<ul>
+            <li>Dell</li>
+            <li>HP</li>
+            <li>Lenovo</li>
+            <li>Apple</li>
+            <li>MSI</li>
+            <li>ASUS</li>
+          </ul>
+          <ul>
+            <li>Apple</li>
+            <li>Samsung</li>
+            <li>Huawei</li>
+            <li>Xiaomi</li>
+            <li>Oppo</li>
+            <li>Realme</li>
+          </ul>
+let fnameValid = nregex.test(fn);
+  let lnameValid = nregex.test(ln);
+  let EmailValid = emailregex.test(emaildata);
+  let passValid = passwordregex.test(pass);
+
+  if (fnameValid && fn !== "") {
+    fnvalid = true;
+  } else {
+    document.getElementById("fnamemsg").style.display = "block";
+  }
+  if (lnameValid && ln !== "") {
+    lnvalid = true;
+  } else {
+    document.getElementById("lnamemsg").style.display = "block";
+  }
+  if (EmailValid && emaildata !== "") {
+    evalid = true;
+  } else {
+    document.getElementById("mailmsg").style.display = "block";
+  }
+  if (passValid && pass !== "") {
+    pvalid = true;
+  } else {
+    document.getElementById("passmsg").style.display = "block";
+  }
+  if (pass === conpass && pass !== "" && conpass !== "") {
+    cpvalid = true;
+  } else {
+    document.getElementById("conmsg").style.display = "block";
+  }
+  let fn = document.getElementById("Fname").value;
+let ln = document.getElementById("Lname").value;
+let emaildata = document.getElementById("Email").value;
+let pass = document.getElementById("Cpass").value;
+let conpass = document.getElementById("ConPass").value;
+let SignUp = document.getElementById("SignUps");
