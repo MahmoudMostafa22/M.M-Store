@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <title>M.M Store</title>
+    <link rel="icon" href="Images/Logo.png" type="image" />
     <link rel="stylesheet" href="GlobalStyle.css" />
   </head>
   <body>
@@ -30,7 +31,9 @@
           <li><a href="Accessories.html">Accessories</a></li>
           <li><a href="Signin.html">Sign In</a></li>
           <li><a href="Signup.html">Sign Up</a></li>
-          <li><a href="Staff.html">Staff</a></li>
+          <li>
+            <a onclick="StaffCheck()" href="Staff.html">Staff</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -91,12 +94,18 @@
           <p class="heads">About Us</p>
           <div class="cardcontanier">
             <div class="card">
-              <img src="" alt="" />
-              <p></p>
+              <img src="" width="300" alt="" />
+              <p>
+                Mahmoud Mostafa <br />
+                19102461
+              </p>
             </div>
             <div class="card">
-              <img src="" alt="" />
-              <p></p>
+              <img src="" width="300" alt="" />
+              <p>
+                Mohamed Hasem <br />
+                16100376
+              </p>
             </div>
           </div>
         </div>
@@ -143,5 +152,10 @@
         </div>
       </div>
     </footer>
+    <script>
+      function StaffCheck() {
+        alert("you are not staff member");
+      }
+    </script>
   </body>
 </html>
