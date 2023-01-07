@@ -320,6 +320,67 @@ header nav ul li a.active {
   font-size: 30px;
   text-align: center;
 }
+.content .ContentBoard .citems {
+  display: flex;
+  width: 100%;
+  padding: 30px 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2833;
+  /* display: none; */
+}
+.content .ContentBoard .citems .cartcardcontanier {
+  width: 100%;
+  background-color: #45a29e;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+.content .ContentBoard .citems .cartcard {
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  padding: 5px 5px;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .ContentBoard .citems .cartcard .cardbutton button {
+  background-color: #45a29e;
+  width: 100%;
+  border: 0px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #66fcf1;
+  transition: 0.3s;
+}
+.content .ContentBoard .citems .cartcard .cardbutton button:hover {
+  color: #0b0c10;
+}
+/* Staff */
+.content .ContentBoard .opitems .titles {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.content .ContentBoard .opitems {
+  width: 100%;
+  padding: 30px 10px;
+  background-color: #1f2833;
+}
+.content .ContentBoard .opitems .opcard {
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  padding: 5px 5px;
+  justify-content: space-around;
+  align-items: center;
+}
 /* Footer  */
 footer {
   display: flex;
