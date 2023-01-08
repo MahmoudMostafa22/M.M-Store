@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <title>M.M Store</title>
-    <link rel="icon" href="Images/Logo.png" type="image" />
+    <link rel="icon" href="Images/Cart.ico" type="image" />
     <link rel="stylesheet" href="GlobalStyle.css" />
   </head>
   <body>
@@ -22,92 +22,49 @@
         /></a>
         <a href="Index.html"><p>M.M Store</p></a>
       </div>
-      <div class="user">Hello There</div>
       <nav>
         <ul>
-          <li><a class="active" href="Index.html"> Home</a></li>
+          <li><a href="Index.html"> Home</a></li>
           <li><a href="Cart.html">Cart</a></li>
           <li><a href="Phone.html">Phone</a></li>
           <li><a href="Laptop.html">Laptop</a></li>
           <li><a href="Accessories.html">Accessories</a></li>
           <li><a href="Signin.html">Sign In</a></li>
           <li><a href="Signup.html">Sign Up</a></li>
-          <li>
-            <a onclick="StaffCheck()" href="Staff.html">Staff</a>
-          </li>
+          <li><a href="Staff.html">Staff</a></li>
         </ul>
       </nav>
     </header>
     <div class="content">
-      <div class="WelcomeBoard">
+      <div class="CartBoard">
         <div class="inlogo">
           <img src="Images/Logo.png" width="300" alt="logo" />
-          <p>New Experience Awaiting</p>
         </div>
       </div>
       <!-- <div class="section-titles">Categories</div> -->
-      <div class="ContentBoard">
-        <div class="items">
-          <p class="heads">Categories</p>
-          <div class="cardcontanier">
-            <a href="Phone.html">
-              <div class="card">
-                <img src="Images/smartphone.png" width="200" alt="" />
-                <div class="cardbutton"><button>View Phones</button></div>
+
+      <div class="CheckBoard">
+        <p class="SectionTitles">Checkout</p>
+        <div class="Infocontainer">
+          <div class="payment">
+            <p>Choose Payment Method</p>
+            <br />
+            <div class="radios">
+              <div class="credit">
+                <label for="visa">Credit Card</label>
+                <input type="radio" name="pay" id="visa" />
               </div>
-            </a>
-            <a href="Laptop.html">
-              <div class="card">
-                <img src="Images/laptop.png" width="200" alt="" />
-                <div class="cardbutton"><button>View Laptops</button></div>
+              <div class="cash">
+                <label for="cash">Cash</label>
+                <input type="radio" name="pay" id="cash" />
               </div>
-            </a>
-            <a href="Accessories.html">
-              <div class="card">
-                <img src="Images/Acc.png" width="200" alt="" />
-                <div class="cardbutton"><button>View Accessories</button></div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="ContentBoard">
-        <div class="items">
-          <p class="heads">Register Yourself</p>
-          <div class="cardcontanier">
-            <a href="Signin.html" target="_self">
-              <div class="card">
-                <img src="Images/signin.png" width="150" alt="" />
-                <div class="cardbutton"><button>Sign In</button></div>
-              </div>
-            </a>
-            <a href="Signup.html">
-              <div class="card">
-                <img src="Images/signup.png" width="150" alt="" />
-                <div class="cardbutton"><button>Sign Up</button></div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="ContentBoard">
-        <div class="items">
-          <p class="heads">About Us</p>
-          <div class="cardcontanier">
-            <div class="card">
-              <img src="" width="300" alt="" />
-              <p>
-                Mahmoud Mostafa <br />
-                19102461
-              </p>
             </div>
-            <div class="card">
-              <img src="" width="300" alt="" />
-              <p>
-                Mohamed Hasem <br />
-                16100376
-              </p>
-            </div>
+          </div>
+          <br />
+          <div class="submitb">
+            <button class="Checkoutbutton" name="CheckButton" type="submit">
+              Confirm Payment
+            </button>
           </div>
         </div>
       </div>
@@ -153,10 +110,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      function StaffCheck() {
-        alert("you are not staff member");
-      }
-    </script>
   </body>
 </html>
