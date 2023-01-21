@@ -46,10 +46,11 @@
       <div class="CheckBoard">
         <p class="SectionTitles">Checkout</p>
         <div class="Infocontainer">
+          <div class="totalpayment">Your Total Is :</div>
           <div class="payment">
             <p>Choose Payment Method</p>
             <br />
-            <div class="radios">
+            <div class="radios" onclick="CheckPay()">
               <div class="credit">
                 <label for="visa">Credit Card</label>
                 <input type="radio" name="pay" id="visa" />
@@ -69,6 +70,9 @@
         </div>
       </div>
     </div>
+    <script>
+      function CheckPay() {}
+    </script>
     <footer>
       <div class="Logo">
         <img src="Images/Logo.png" width="200" alt="" />

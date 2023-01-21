@@ -1,6 +1,7 @@
 var emailregex =
   /^[a-zA-Z0-9.!#$%&'* +/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/;
-var passwordregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+var passwordregex =
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 var nregex = /^[a-zA-Z]{2,}$/;
 
 document.getElementById("SignUps").onsubmit = function (e) {
